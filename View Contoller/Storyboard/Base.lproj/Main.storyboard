@@ -197,21 +197,28 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvE-cB-MIz">
-                                                    <rect key="frame" x="652" y="37" width="1182" height="75"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvE-cB-MIz">
+                                                    <rect key="frame" x="20" y="37" width="0.0" height="75"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huH-6d-A7C">
-                                                    <rect key="frame" x="20" y="64" width="256" height="48"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huH-6d-A7C">
+                                                    <rect key="frame" x="20" y="11" width="0.0" height="128"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="huH-6d-A7C" firstAttribute="bottom" secondItem="TVf-gg-bvG" secondAttribute="bottomMargin" id="MiD-xv-Tqm"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="huH-6d-A7C" secondAttribute="bottom" id="ODA-U7-MF7"/>
+                                                <constraint firstItem="huH-6d-A7C" firstAttribute="leading" secondItem="TVf-gg-bvG" secondAttribute="leadingMargin" id="QfR-7A-aaO"/>
+                                                <constraint firstItem="jvE-cB-MIz" firstAttribute="leading" secondItem="huH-6d-A7C" secondAttribute="trailing" id="WF3-6c-kt5"/>
+                                                <constraint firstItem="huH-6d-A7C" firstAttribute="top" secondItem="TVf-gg-bvG" secondAttribute="topMargin" id="d27-EK-7Qy"/>
+                                                <constraint firstItem="huH-6d-A7C" firstAttribute="top" secondItem="TVf-gg-bvG" secondAttribute="topMargin" id="l5N-xl-xli"/>
+                                                <constraint firstItem="jvE-cB-MIz" firstAttribute="leading" secondItem="huH-6d-A7C" secondAttribute="trailing" id="oXp-A7-OwX"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="titleLabel" destination="huH-6d-A7C" id="XRn-cU-xk9"/>

@@ -16,7 +16,7 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         let objnetworking=Network()
         objnetworking.getPostFrom(serverurl: Server.kPost.rawValue) { objmodel in
-            self.objPostList=objmodel 
+            self.objPostList=objmodel ?? []
             DispatchQueue.main.async {
             self.objTable.reloadData()
             }

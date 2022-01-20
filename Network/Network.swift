@@ -7,12 +7,12 @@
 
 import UIKit
 
-class Network: NSObject {
+class Network{
     func getPostFrom(serverurl:String, completionHandler :@escaping ([PostModel])->() )
     {
         URLSession.shared.dataTask(with:URL(string: serverurl)!){(data,response,error) in
             if let _=error{
-                print("unable to feetch data")
+                print("unable to fetch data")
                 return
             }
             do{
